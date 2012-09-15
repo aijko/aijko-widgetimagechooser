@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aijko_WidgetImageChooser>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Aijko_WidgetImageChooser>
+    </modules>
+</config>

@@ -1,0 +1,3 @@
+app/code/community/Aijko/WidgetImageChooser/                                /app/code/community/Aijko/WidgetImageChooser/
+app/etc/modules/Aijko_WidgetImageChooser.xml                                /app/etc/modules/Aijko_WidgetImageChooser.xml
+app/design/adminhtml/default/default/layout/aijko/widgetimagechooser.xml    /app/design/adminhtml/default/default/layout/aijko/widgetimagechooser.xml

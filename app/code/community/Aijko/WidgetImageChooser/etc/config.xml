@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aijko_WidgetImageChooser>
+            <version>0.1.0</version>
+        </Aijko_WidgetImageChooser>
+    </modules>
+    <global>
+        <blocks>
+            <widgetimagechooser>
+                <class>Aijko_WidgetImageChooser_Block</class>
+            </widgetimagechooser>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <widgetimagechooser before="Mage_Adminhtml">Aijko_WidgetImageChooser_Adminhtml</widgetimagechooser>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <widgetimagechooser>
+                    <file>aijko/widgetimagechooser.xml</file>
+                </widgetimagechooser>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
