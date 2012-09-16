@@ -3,7 +3,7 @@ Aijko_WidgetImageChooser
 
 ## Branches
 
-* master => stable version of this extension (tested with EE 1.12.0.2)
+* master => stable version of this extension (tested with CE 1.7.0.2 & EE 1.12.0.2)
 * develop => development version
 
 ## About this extension
@@ -50,5 +50,7 @@ Example widget.xml:
                     <sort_order>30</sort_order>
                 </image>
             </parameters>
-        </widget>
+        </widget_sample>
     </widgets>
+
+Please have a look at a working example widget here https://github.com/aijko/aijko-widgetimagechooserexample
