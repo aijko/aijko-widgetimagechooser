@@ -3,13 +3,17 @@ Aijko_WidgetImageChooser
 
 ## Branches
 
-* master => stable version of this extension (tested with CE 1.7.0.2 & EE 1.12.0.2)
+* master => stable version of this extension (tested with CE 1.5.1.0, 1.6.2.0, 1.7.0.2 & EE 1.12.0.2)
 * develop => development version
 
 ## About this extension
 
 Aijko_WidgetImageChooser introduces a new field type **widgetimagechooser/chooser** in the widget declaration to use the
 standard Magento image chooser in widgets as well.
+
+## Installation
+
+This extension is available as a modman package so just clone it in your project or install via MagentoConnect here http://www.magentocommerce.com/magento-connect/catalog/product/view/id/14537/
 
 ## How-To
 
