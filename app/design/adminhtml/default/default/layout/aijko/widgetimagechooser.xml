@@ -1,5 +1,13 @@
 <?xml version="1.0"?>
 <layout>
+	<adminhtml_widget_instance_edit>
+		<reference name="head">			
+			<action method="addJs"><script>lib/flex.js</script></action>
+			<action method="addJs"><script>lib/FABridge.js</script></action>
+			<action method="addJs"><script>mage/adminhtml/flexuploader.js</script></action>
+			<action method="addJs"><script>mage/adminhtml/browser.js</script></action>
+		</reference>
+	</adminhtml_widget_instance_edit>
     <adminhtml_cms_wysiwyg_images_chooser_index>
         <remove name="footer" />
         <remove name="head" />
