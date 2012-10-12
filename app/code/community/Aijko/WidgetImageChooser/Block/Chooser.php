@@ -42,13 +42,22 @@ class Aijko_WidgetImageChooser_Block_Chooser extends Mage_Adminhtml_Block_Widget
 
         $chooseButton = $this->getLayout()->createBlock('adminhtml/widget_button')
             ->setType('button')
-            ->setClass('scalable btn-chooser')
+            ->setClass('btn-chooser')
             ->setLabel($label)
             ->setOnclick('MediabrowserUtility.openDialog(\'' . $chooserUrl . '\')')
             ->setDisabled($element->getReadonly())
-            ->setStyle('margin-top:7px');
+            ->setStyle('display:inline;margin-top:7px');
+		
+		// Add delete button.		
+		$removeButton = $this->getLayout()->createBlock('adminhtml/widget_button')
+            ->setType('button')
+            ->setClass('delete')
+            ->setLabel($this->__('Remove Image'))
+            ->setOnclick('document.getElementById(\''.$element->getId().'\').value=\'\';if(document.getElementById(\''.$element->getId().'_image\'))document.getElementById(\''.$element->getId().'_image\').parentNode.remove()')
+            ->setDisabled($element->getReadonly())
+            ->setStyle('margin-left:10px;margin-top:7px');
 
-        $element->setData('after_element_html', $previewHtml . $chooseButton->toHtml());
+        $element->setData('after_element_html', $previewHtml . $chooseButton->toHtml() . $removeButton->toHtml());
 
         $this->_element = $element;
         return $this->toHtml();
