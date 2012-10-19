@@ -47,9 +47,9 @@ class Aijko_WidgetImageChooser_Block_Chooser extends Mage_Adminhtml_Block_Widget
             ->setOnclick('MediabrowserUtility.openDialog(\'' . $chooserUrl . '\')')
             ->setDisabled($element->getReadonly())
             ->setStyle('display:inline;margin-top:7px');
-		
-		// Add delete button.		
-		$removeButton = $this->getLayout()->createBlock('adminhtml/widget_button')
+
+        // Add delete button.
+        $removeButton = $this->getLayout()->createBlock('adminhtml/widget_button')
             ->setType('button')
             ->setClass('delete')
             ->setLabel($this->__('Remove Image'))
