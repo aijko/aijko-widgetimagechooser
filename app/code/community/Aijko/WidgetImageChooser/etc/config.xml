@@ -31,5 +31,14 @@
                 </widgetimagechooser>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <aijko_widgetimagechooser>
+                    <files>
+                        <default>Aijko_WidgetImageChooser.csv</default>
+                    </files>
+                </aijko_widgetimagechooser>
+            </modules>
+        </translate>
     </adminhtml>
 </config>
