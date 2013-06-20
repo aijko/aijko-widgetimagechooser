@@ -1,0 +1,16 @@
+{
+    "name": "aijko/aijko_widgetimagechooser",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Widget Image Chooser",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Gerrit Pechmann",
+            "email":"gp@aijko.de"
+        }
+    ]
+}
+
