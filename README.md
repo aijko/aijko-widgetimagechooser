@@ -13,7 +13,7 @@ standard Magento image chooser in widgets as well.
 
 ## Installation
 
-This extension is available as a modman package so just clone it in your project or install via MagentoConnect here http://www.magentocommerce.com/magento-connect/catalog/product/view/id/14537/
+This extension is available as a modman package so just clone it in your project or install via MagentoConnect here http://www.magentocommerce.com/magento-connect/widget-image-chooser-7129.html
 
 ## How-To
 

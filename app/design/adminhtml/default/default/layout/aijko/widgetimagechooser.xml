@@ -22,7 +22,6 @@
             </block>
         </reference>
     </adminhtml_cms_wysiwyg_images_chooser_index>
-
     <adminhtml_cms_wysiwyg_images_chooser_contents>
         <block name="wysiwyg_images.files" type="adminhtml/cms_wysiwyg_images_content_files" template="cms/browser/content/files.phtml" output="toHtml" />
     </adminhtml_cms_wysiwyg_images_chooser_contents>
