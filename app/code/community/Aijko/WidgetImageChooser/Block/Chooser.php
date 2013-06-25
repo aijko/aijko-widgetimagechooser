@@ -10,7 +10,6 @@
 class Aijko_WidgetImageChooser_Block_Chooser extends Mage_Adminhtml_Block_Widget_Form_Renderer_Fieldset_Element
 {
 
-
     /**
      * Render element.
      *
@@ -37,9 +36,8 @@ class Aijko_WidgetImageChooser_Block_Chooser extends Mage_Adminhtml_Block_Widget
                          . '</a> ';
         }
 
-        // Add chooser button.
-        // element prefix can be set by calling setElementPrefix() before.
-        $elementId = $this->getElementPrefix() . $element->getId();
+        $prefix = $element->getForm()->getHtmlIdPrefix();
+        $elementId = $prefix . $element->getId();
 
         $chooserUrl = $this->getUrl('*/cms_wysiwyg_images_chooser/index', array('target_element_id' => $elementId));
 
