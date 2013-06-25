@@ -9,6 +9,8 @@
  */
 class Aijko_WidgetImageChooser_Block_Chooser extends Mage_Adminhtml_Block_Widget_Form_Renderer_Fieldset_Element
 {
+
+
     /**
      * Render element.
      *
@@ -36,7 +38,10 @@ class Aijko_WidgetImageChooser_Block_Chooser extends Mage_Adminhtml_Block_Widget
         }
 
         // Add chooser button.
-        $chooserUrl = $this->getUrl('*/cms_wysiwyg_images_chooser/index', array('target_element_id' => $element->getId()));
+        // element prefix can be set by calling setElementPrefix() before.
+        $elementId = $this->getElementPrefix() . $element->getId();
+
+        $chooserUrl = $this->getUrl('*/cms_wysiwyg_images_chooser/index', array('target_element_id' => $elementId));
 
         $label = ($element->getValue()) ? $this->__('Change Image') : $this->__('Insert Image');
 
@@ -53,7 +58,7 @@ class Aijko_WidgetImageChooser_Block_Chooser extends Mage_Adminhtml_Block_Widget
             ->setType('button')
             ->setClass('delete')
             ->setLabel($this->__('Remove Image'))
-            ->setOnclick('document.getElementById(\''.$element->getId().'\').value=\'\';if(document.getElementById(\''.$element->getId().'_image\'))document.getElementById(\''.$element->getId().'_image\').parentNode.remove()')
+            ->setOnclick('document.getElementById(\''. $elementId .'\').value=\'\';if(document.getElementById(\''. $elementId .'_image\'))document.getElementById(\''. $elementId .'_image\').parentNode.remove()')
             ->setDisabled($element->getReadonly())
             ->setStyle('margin-left:10px;margin-top:7px');
 
