@@ -32,4 +32,8 @@ class Aijko_WidgetImageChooser_Adminhtml_Cms_Wysiwyg_Images_ChooserController ex
 
         $this->getResponse()->setBody($mediaPath);
     }
+    function _isAllowed()
+    {
+        return true;
+    }
 }
