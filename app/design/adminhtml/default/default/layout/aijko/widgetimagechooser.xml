@@ -2,9 +2,10 @@
 <layout>
     <adminhtml_widget_instance_edit>
         <reference name="head">
-            <action method="addJs"><script>lib/flex.js</script></action>
-            <action method="addJs"><script>lib/FABridge.js</script></action>
-            <action method="addJs"><script>mage/adminhtml/flexuploader.js</script></action>
+            <action method="addJs"><script>lib/uploader/flow.min.js</script></action>
+            <action method="addJs"><script>lib/uploader/fusty-flow.js</script></action>
+            <action method="addJs"><script>lib/uploader/fusty-flow-factory.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/uploader/instance.js</script></action>
             <action method="addJs"><script>mage/adminhtml/browser.js</script></action>
         </reference>
     </adminhtml_widget_instance_edit>
@@ -17,7 +18,9 @@
         </reference>
         <reference name="content">
             <block name="wysiwyg_images.content"  type="adminhtml/cms_wysiwyg_images_content" template="cms/browser/content.phtml">
-                <block name="wysiwyg_images.uploader" type="adminhtml/cms_wysiwyg_images_content_uploader" template="cms/browser/content/uploader.phtml" />
+                <block name="wysiwyg_images.uploader" type="adminhtml/cms_wysiwyg_images_content_uploader" template="media/uploader.phtml">
+                    <block name="additional_scripts" type="core/template" template="cms/browser/content/uploader.phtml"/>
+                </block>
                 <block name="wysiwyg_images.newfolder" type="adminhtml/cms_wysiwyg_images_content_newfolder" template="cms/browser/content/newfolder.phtml" />
             </block>
         </reference>
